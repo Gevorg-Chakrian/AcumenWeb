@@ -51,8 +51,8 @@ section {
 }
 
 
-.hero-slider .owl-prev,
-.hero-slider .owl-next{
+#hero-slider .owl-prev,
+#hero-slider .owl-next{
     background-color: rgba(255, 255, 255, 0.3) !important;
     width: 60px !important;
     height: 60px !important;
@@ -78,8 +78,8 @@ section {
     right: 0;
 }
 
-.hero-slider .owl-prev:hover,
-.hero-slider .owl-next:hover {
+#hero-slider .owl-prev:hover,
+#hero-slider .owl-next:hover {
     background-color: var(--brand) !important; 
 }
 
@@ -197,7 +197,7 @@ section {
 text-align: center;}
 
 .intro p {
-    max-width: 500px;
+    max-width: 800px;
 }
 .intro h6{
     color: var(--brand);
@@ -489,4 +489,10 @@ input.form-control {
 .form-control:focus {
     box-shadow: none;
     border-color: var(--brand);
+}
+
+/*  Added some padding to the map container
+    This is to align the content of the divs a little bit better*/
+#map-container {
+  padding: .5rem 1rem;
 }

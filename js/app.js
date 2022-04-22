@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     //Owl
-    $('.hero-slider').owlCarousel({
+    $('#hero-slider').owlCarousel({
         loop: true,
         margin: 0,
         items: 1,
@@ -19,29 +19,9 @@ $(document).ready(function () {
                 nav: true,
             }
         }
-    })
+    }).on('click',()=>{resetCarouselTimer('hero-slider')});
 
-    $('#projects-slider').owlCarousel({
-        loop: true,
-        nav: false,
-        items: 2,
-        dots: true,
-        smartSpeed: 600,
-        center: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2,
-                margin: 8,
-            }
-        }
-    })
-
-    $('.reviews-slider').owlCarousel({
+    $('#reviews-slider').owlCarousel({
         loop: true,
         nav: false,
         dots: true,
@@ -52,3 +32,11 @@ $(document).ready(function () {
         autoplayTimeout: 4000,
     })
 });
+
+//Reset timer on carousel if it's interacted with
+function resetCarouselTimer(carousel_id){
+  console.log('resetting timer for: '+carousel_id);
+  //A handy feature of jQuery is that it returns the object at the end of the function
+  //So functions can be chained together
+  $('#'+carousel_id).trigger('stop.owl.autoplay').trigger('play.owl.autoplay');
+}

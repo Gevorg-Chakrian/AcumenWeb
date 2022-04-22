@@ -10,14 +10,16 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
     
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/css/owl.theme.default.min.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Acumen Ecoverse BS5 Template</title>
+    <title>Acumen Ecoverse</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
@@ -32,10 +34,12 @@
                     <p> <i class='bx bxs-phone-call'></i> (219) 555-0114</p>
                 </div>
                 <div class="col-auto social-icons">
+                    <!-- Hiding unused socials
                     <a href="#"><i class='bx bxl-facebook'></i></a>
                     <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a> 
+                    -->
+                    <a href="https://nl.linkedin.com/company/acumen-ecoverse/"><i class='bx bxl-linkedin'></i></a>
                 </div>
             </div>
         </div>
@@ -63,10 +67,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Team</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- Hide reviews for the moment -->
+                    <li class="nav-item d-none">
                         <a class="nav-link" href="#reviews">Reviews</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- Hide blog for the moment -->
+                    <li class="nav-item d-none">
                         <a class="nav-link" href="#blog">Blog</a>
                     </li>
                 </ul>
@@ -76,7 +82,7 @@
     </nav>
 
     <!-- SLIDER -->
-    <div class="owl-carousel owl-theme hero-slider data-8000">
+    <div id="hero-slider" class="owl-carousel owl-theme data-8000">
         <div class="slide slide1">
             <div class="container">
                 <div class="row">
@@ -84,7 +90,7 @@
                         <h6 class="text-white text-uppercase">BECOME AN INVESTOR</h6>
                         <h1 class="display-3 my-4">BECOME AN INVESTOR</h1>
                         <a href="#" class="btn btn-brand">Get Started</a>
-                        <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+                        <a href="#" class="btn btn-outline-light ms-3 d-none">Our work</a>
                     </div>
                 </div>
             </div>
@@ -92,11 +98,11 @@
         <div class="slide slide2">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-10 offset-lg-1 text-white">
+                    <div class="col-12 col-lg-10 offset-lg-1 text-center text-white">
                         <h6 class="text-white text-uppercase">BECOME AN ENTEPRENEUR</h6>
                         <h1 class="display-3 my-4">BECOME AN <br>ENTEPRENEUR</h1>
                         <a href="#" class="btn btn-brand">Get Started</a>
-                        <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+                        <a href="#" class="btn btn-outline-light ms-3 d-none">Our work</a>
                     </div>
                 </div>
             </div>
@@ -148,7 +154,7 @@
     <!-- MILESTONE -->
     <section id="milestone">
         <div class="container">
-            <div class="row text-center justify-content-center gy-4">
+            <div class="row text-center justify-content-center gy-4 d-none">
                 <div class="col-lg-2 col-sm-6">
                     <h1 class="display-4">90K+</h1>
                     <p class="mb-0">Text example</p>
@@ -176,19 +182,23 @@
                 <div class="col-12">
                     <div class="intro">
                         <h6>Our Services</h6>
-                        <div class="mx-auto fs-4" style="width: 800px;">Acumen Ecoverse is an investment enabling solutions
-                        firm with a mission to prepare and guide the brightest
-                        innovators towards the right investors, where a vision
-                        can be shared and achieved for the betterment of both
-                        parties, and society. We curate an ecosystem that
-                        delivers synergy between European entrepreneurs
-                        seeking resources to realise their funding goals, and
-                        investors seeking reliable pathways to emerging talent.</p>
+                        <div class="row fs-4">
+                            <p class="mx-auto">
+                                Acumen Ecoverse is an investment enabling solutions
+                                firm with a mission to prepare and guide the brightest
+                                innovators towards the right investors, where a vision
+                                can be shared and achieved for the betterment of both
+                                parties, and society. We curate an ecosystem that
+                                delivers synergy between European entrepreneurs
+                                seeking resources to realise their funding goals, and
+                                investors seeking reliable pathways to emerging talent.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 my-2">
                     <div class="service">
                         <img src="img/icon4.png" alt="">
                         <h5>Early-stage</h5>
@@ -199,7 +209,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 my-2">
                     <div class="service">
                         <img src="img/icon5.png" alt="">
                         <h5>Acceleration</h5>
@@ -210,7 +220,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 my-2">
                     <div class="service">
                         <img src="img/icon6.png" alt="">
                         <h5>Deal scouting</h5>
@@ -237,7 +247,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-8">
+                <div class="col-lg-4 col-md-8 my-2 p-4 p-md-2">
                     <div class="team-member">
                         <div class="image">
                             <img src="img/team_2.jpeg" alt="">
@@ -252,11 +262,11 @@
 
                         <h5>Mohammad Al Zayat (MAZ)</h5>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quis, rem culpa labore voluptate
-                    ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
-                    enim nam exercitationem optio ducimus!</p>
+                        ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
+                        enim nam exercitationem optio ducimus!</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-8">
+                <div class="col-lg-4 col-md-8 my-2 p-4 p-md-2">
                     <div class="team-member">
                         <div class="image">
                             <img src="img/team_1.jpeg" alt="">
@@ -270,17 +280,18 @@
                         </div>
                         <h5>Martin Cullen</h5>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quis, rem culpa labore voluptate
-                    ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
-                    enim nam exercitationem optio ducimus!</p>
+                        ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
+                        enim nam exercitationem optio ducimus!</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-light" id="reviews">
+    <!-- Hide reviews for the moment -->
+    <section class="bg-light d-none" id="reviews">
 
-        <div class="owl-theme owl-carousel reviews-slider container data-8000">
+        <div id="reviews-slider" class="owl-theme owl-carousel container data-8000">
             <div class="review">
                 <div class="person ">
                     <img src="img/team_1.jpeg" alt="">
@@ -364,8 +375,8 @@
               </li>
             </ul>
           </div>
-          <div class="col-md">
-            <div id='map' style='width: 100%; height: 100%;'></div>
+          <div id="map-container" class="col-md">
+            <div id='map' class="m-auto" style='width: 75%; height: 100%;'></div>
           </div>
         </div>
       </div>
@@ -380,10 +391,12 @@
                         <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                             classical Latin literature from</p>
                         <div class="col-auto social-icons">
+                            <!--
                             <a href="#"><i class='bx bxl-facebook'></i></a>
                             <a href="#"><i class='bx bxl-twitter'></i></a>
-                            <a href="#"><i class='bx bxl-instagram'></i></a>
-                            <a href="#"><i class='bx bxl-linkedin'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a> 
+                            -->
+                            <a href="https://nl.linkedin.com/company/acumen-ecoverse/"><i class='bx bxl-linkedin'></i></a>
                         </div>
                     </div>
                 </div>
@@ -455,11 +468,11 @@
 
 
     
-    <script src="js/style.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/js/owl.carousel.min.js"></script>
+
+    <script src="/js/app.js"></script>
     
     <script>    
         mapboxgl.accessToken = 'pk.eyJ1IjoiZ2V2b3JnY2hha3JpYW4iLCJhIjoiY2wyMDk4c21mMHUzcDNibXpqNW14czEwYyJ9.FVeVKXaiutbRFso6U08wmA';
