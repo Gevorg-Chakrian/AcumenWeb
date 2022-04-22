@@ -490,3 +490,9 @@ input.form-control {
     box-shadow: none;
     border-color: var(--brand);
 }
+
+/*  Added some padding to the map container
+    This is to align the content of the divs a little bit better*/
+#map-container {
+  padding: .5rem 1rem;
+}
