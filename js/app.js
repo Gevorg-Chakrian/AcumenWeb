@@ -38,5 +38,5 @@ function resetCarouselTimer(carousel_id){
   console.log('resetting timer for: '+carousel_id);
   //A handy feature of jQuery is that it returns the object at the end of the function
   //So functions can be chained together
-  $('#'+carousel_id).trigger('play.owl.autoplay').trigger('stop.owl.autoplay');
+  $('#'+carousel_id).trigger('stop.owl.autoplay').trigger('play.owl.autoplay');
 }
