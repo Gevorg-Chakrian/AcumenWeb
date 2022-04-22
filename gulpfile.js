@@ -70,7 +70,8 @@ function static_assets() {
   //this could be images, downloadable documents, json files etc...
   //we just add more files/folders to the below array
   var files = [
-    './img/**/*'
+    './img/**/*',
+    './vendor/**/*'
   ];
   console.log("Copying '" + files + "' to '" + paths.scripts.dest + "'");
 
